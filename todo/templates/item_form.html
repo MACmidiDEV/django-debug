@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>addItem_form</title>
+</head>
+<body>
+    <h1>Add an Item todo....</h1>
+    
+    
+     <form method="POST">
+        
+        {% csrf_token %}<!--
+        <label for="id_name">Name</label>
+        <input type="text" id="id_name" name="name"/>
+        <br>
+        <label for="id_done">Done</label>
+        <input type="checkbox" id="id_done" name="done"/>-->
+        
+        {{ form.as_p }}
+        
+        
+        <!--{{ form.as_p }}-->
+        <button type="submit">Save</button>
+        <br>
+    </form>
+        <br><br><br>
+    
+    <a href="/">(<) return</a>
+</body>
+</html>
