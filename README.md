@@ -1,6 +1,6 @@
 # Task-Manager Web App 
 # Author MACmidiDev_sunnov240754pm
-# Database = {"default": dj_database_url.parse("postgres://syrmdrsmtaruoe:57c7a5b0fdd97b2ce963d741e111f0e166de43873da2bca5a7eedfb721361017@ec2-54-225-173-42.compute-1.amazonaws.com:5432/d6afvil82tiv2i")}
+
 
 # sudo pip3 install django==1.11.24
 # django-admin startproject django_todo . < dot to install in current dir
