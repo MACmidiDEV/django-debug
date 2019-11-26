@@ -1,6 +1,7 @@
 # Task-Manager Web App 
 # Author MACmidiDev_sunnov240754pm
 
+# export DEVELOPMENT=1
 
 # sudo pip3 install django==1.11.24
 # django-admin startproject django_todo . < dot to install in current dir
