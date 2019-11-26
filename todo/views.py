@@ -32,43 +32,17 @@ def edit_an_item(request, id):
     else:        
         form = ItemForm(instance=item)
     return render(request, "item_form.html", {'form': form})  
-    
+# button toggle done    
 def toggle_status(request, id):
     item = get_object_or_404(Item,pk=id)
     item.done = not item.done
     item.save()
     return redirect(get_todo_list)
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-# def toggle_delete_all(request, id):
-    
-#     item = get_object_or_404(Item,pk=id)
+#
 
-#     if request.method=="POST":
-#         form = ItemForm(request.POST, instance=item)
-#         if form.is_valid():
-#             form.delete()
-#             form.save()
-#             return redirect(get_todo_list)
-#     else:        
-#         form = ItemForm(instance=item)
-#     return render(request, "todo_list.html")  
     
-
+    
+    
     
     
